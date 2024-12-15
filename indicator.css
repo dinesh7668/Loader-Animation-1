@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(27, 35, 35);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 25vh;
+    width: 25vw;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid aquamarine;
+    border-radius: 12px;
+    animation: border 3s ease-in 1s infinite ;
+
+}
+
+.box1{
+    height: 20px;
+    width: 200px;
+    border: 1px solid red;
+    border-radius: 12px;
+}
+
+.box2{
+
+    animation: animate 3s ease-in 1s infinite ;
+    border-radius: 12px;
+    height: 20px;
+
+}
+
+@keyframes animate {
+
+    10%{
+         
+         width: 10%;
+         background-color: aqua;
+         }
+    30%{
+        width: 30%;
+        border-radius: 12px;
+        background-color: yellow;
+    }
+    50%{
+         width: 50%;
+         background-color: rgb(226, 43, 214);
+          }
+    70%{
+         width: 70%;
+         
+         background-color: green;
+          }
+    80%{
+         width: 80%;
+         
+         background-color: blue;
+          }
+    
+    100%{
+         width: 100%;
+         
+         background-color: red;
+           }
+    
+}
+@keyframes border {
+
+    10%{
+       
+         border: 2px solid aqua;
+         }
+    30%{
+        
+        border: 2px solid  yellow;
+    }
+    50%{
+       
+         border: 2px solid rgb(226, 43, 214);
+          }
+    70%{
+       
+     border: 2px solid green;
+          }
+    80%{
+       borde: 2px solid blue;
+          }
+    
+    100%{
+    border: 2px solid  red;
+           }
+    
+}
